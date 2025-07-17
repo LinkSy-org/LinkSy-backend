@@ -1,0 +1,51 @@
+.post-card {
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(145deg, #f0f0f0, #e0e0e0);
+}
+
+.post-card .title {
+  font-weight: 600;
+  color: #333;
+  transition: color 0.2s ease;
+}
+
+.post-card .title:hover {
+  color: #000;
+}
+
+.post-card .content {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.post-card:hover {
+  transform: scale(1.015);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.post-card .MuiIconButton-root:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  transition: background-color 0.2s ease;
+}
+
+
+.post-card .primary .content {
+  -webkit-mask-image: linear-gradient(black 175px, transparent 250px);
+  mask-image: linear-gradient(black 175px, transparent 250px);
+}
+
+.post-card .secondary .title {
+  -webkit-mask-image: linear-gradient(black 70px, transparent 125px);
+  mask-image: linear-gradient(black 70px, transparent 125px);
+}
+
+html {
+  overflow-y: scroll;
+}
+
+
+

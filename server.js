@@ -17,7 +17,7 @@ dotenv.config();
 const httpServer = require("http").createServer(app);
 const io = require("socket.io")(httpServer, {
   cors: {
-    origin: ["http://localhost:3000", "https://LinkSy.vercel.com"],
+    origin: ["http://localhost:3000", "link-sy-frontend-jfpy.vercel.app"],
     credentials:true,
   },
 });
